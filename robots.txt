@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://micross.github.io/sitemap.xml
