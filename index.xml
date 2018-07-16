@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Micross博客</title>
+    <title>Micross</title>
     <link>https://micross.github.io/</link>
-    <description>Recent content on Micross博客</description>
+    <description>Recent content on Micross</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 15 Jul 2018 23:49:27 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 21:30:08 +0800</lastBuildDate>
     
         <atom:link href="https://micross.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
+      <title>关于</title>
       <link>https://micross.github.io/about/</link>
-      <pubDate>Sun, 15 Jul 2018 23:49:27 +0800</pubDate>
+      <pubDate>Mon, 16 Jul 2018 21:30:08 +0800</pubDate>
       
       <guid>https://micross.github.io/about/</guid>
       
@@ -24,14 +24,13 @@
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>https://micross.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 15 Jul 2018 14:31:47 +0800</pubDate>
+      <title>Test</title>
+      <link>https://micross.github.io/post/test/</link>
+      <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
       
-      <guid>https://micross.github.io/posts/my-first-post/</guid>
+      <guid>https://micross.github.io/post/test/</guid>
       
-        <description>&lt;p&gt;test&lt;/p&gt;
-</description>
+        <description></description>
       
     </item>
     
