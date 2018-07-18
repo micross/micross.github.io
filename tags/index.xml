@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Micross</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
+    <lastBuildDate>Mon, 16 Jul 2018 21:32:16 +0800</lastBuildDate>
     
 	<atom:link href="https://micross.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go</title>
+      <link>https://micross.github.io/tags/go/</link>
+      <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
+      
+      <guid>https://micross.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://micross.github.io/tags/golang/</link>
+      <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
+      
+      <guid>https://micross.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sudoku</title>
+      <link>https://micross.github.io/tags/sudoku/</link>
+      <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
+      
+      <guid>https://micross.github.io/tags/sudoku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数独</title>
+      <link>https://micross.github.io/tags/%E6%95%B0%E7%8B%AC/</link>
+      <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
+      
+      <guid>https://micross.github.io/tags/%E6%95%B0%E7%8B%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>https://micross.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
+      
+      <guid>https://micross.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
