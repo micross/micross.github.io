@@ -17,7 +17,7 @@
       <pubDate>Mon, 16 Jul 2018 21:32:16 +0800</pubDate>
       
       <guid>https://micross.github.io/post/sudoku_solution_validator/</guid>
-      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  func ValidateSolution(m [][]int) bool { for outer_idx, outer_val := range m { var row, col, grid [10]bool for inner_idx, inner_val := range outer_val { // validate row if inner_val == 0 || row[inner_val] == true { return false } else { row[inner_val] = true } // validate column key := m[inner_idx][outer_idx] if col[key] == true { return false } else { col[key] = true } // validate grid x := 3*(outer_idx/3) + inner_idx/3 y := 3*(outer_idx%3) + inner_idx%3 key = m[x][y] if grid[key] == true { return false } else { grid[key] = true } } } return true }  </description>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  func ValidateSolution(m [][]int) bool { for outer_idx, outer_val := range m { var row, col, grid [10]bool for inner_idx, inner_val := range outer_val { // validate row 	if inner_val == 0 || row[inner_val] == true { return false } else { row[inner_val] = true } // validate column 	key := m[inner_idx][outer_idx] if col[key] == true { return false } else { col[key] = true } // validate grid 	x := 3*(outer_idx/3) + inner_idx/3 y := 3*(outer_idx%3) + inner_idx%3 key = m[x][y] if grid[key] == true { return false } else { grid[key] = true } } } return true }  </description>
     </item>
     
   </channel>

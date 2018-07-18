@@ -25,8 +25,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="micross" />
-  <meta name="description" content="Hugo theme jane example site." />
-  <meta name="keywords" content="Hugo, theme, jane" />
+  <meta name="description" content="Micross的个人博客." />
+  <meta name="keywords" content="Micross, go, php" />
 
 
 
@@ -62,7 +62,7 @@
 
 
 <meta property="og:title" content="Micross" />
-<meta property="og:description" content="Hugo theme jane example site." />
+<meta property="og:description" content="Micross的个人博客." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://micross.github.io/" />
 
@@ -80,11 +80,11 @@
 
 
 <meta itemprop="name" content="Micross">
-<meta itemprop="description" content="Hugo theme jane example site.">
+<meta itemprop="description" content="Micross的个人博客.">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Micross"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:description" content="Micross的个人博客."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -316,10 +316,78 @@
   <div class="post-content">
     
     <div class="post-summary">
-      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  func ValidateSolution(m [][]int) bool { for outer_idx, outer_val := range m { var row, col, grid [10]bool for inner_idx, inner_val := range outer_val { // validate row if inner_val == 0 || row[inner_val] == true { return false } else { row[inner_val] = true } // validate column key := m[inner_idx][outer_idx] if col[key] == true { return false } else { col[key] = true } // validate grid x := 3*(outer_idx/3) + inner_idx/3 y := 3*(outer_idx%3) + inner_idx%3 key = m[x][y] if grid[key] == true { return false } else { grid[key] = true } } } return true }  
-    </div>
-    <div class="read-more">
-      <a href="/post/sudoku_solution_validator/" class="read-more-link">阅读全文</a>
+      <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nx">ValidateSolution</span><span class="p">(</span><span class="nx">m</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">bool</span> <span class="p">{</span>
+	<span class="k">for</span> <span class="nx">outer_idx</span><span class="p">,</span> <span class="nx">outer_val</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">m</span> <span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">,</span> <span class="nx">grid</span> <span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="kt">bool</span>
+		<span class="k">for</span> <span class="nx">inner_idx</span><span class="p">,</span> <span class="nx">inner_val</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">outer_val</span> <span class="p">{</span>
+			<span class="c1">// validate row
+</span><span class="c1"></span>			<span class="k">if</span> <span class="nx">inner_val</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">row</span><span class="p">[</span><span class="nx">inner_val</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
+				<span class="k">return</span> <span class="kc">false</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">row</span><span class="p">[</span><span class="nx">inner_val</span><span class="p">]</span> <span class="p">=</span> <span class="kc">true</span>
+			<span class="p">}</span>
+
+			<span class="c1">// validate column
+</span><span class="c1"></span>			<span class="nx">key</span> <span class="o">:=</span> <span class="nx">m</span><span class="p">[</span><span class="nx">inner_idx</span><span class="p">][</span><span class="nx">outer_idx</span><span class="p">]</span>
+			<span class="k">if</span> <span class="nx">col</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
+				<span class="k">return</span> <span class="kc">false</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">col</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="p">=</span> <span class="kc">true</span>
+			<span class="p">}</span>
+
+			<span class="c1">// validate grid
+</span><span class="c1"></span>			<span class="nx">x</span> <span class="o">:=</span> <span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="nx">outer_idx</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="nx">inner_idx</span><span class="o">/</span><span class="mi">3</span>
+			<span class="nx">y</span> <span class="o">:=</span> <span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="nx">outer_idx</span><span class="o">%</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="nx">inner_idx</span><span class="o">%</span><span class="mi">3</span>
+			<span class="nx">key</span> <span class="p">=</span> <span class="nx">m</span><span class="p">[</span><span class="nx">x</span><span class="p">][</span><span class="nx">y</span><span class="p">]</span>
+			<span class="k">if</span> <span class="nx">grid</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
+				<span class="k">return</span> <span class="kc">false</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">grid</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="p">=</span> <span class="kc">true</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="kc">true</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
     
   </div>
