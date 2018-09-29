@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://micross.github.io/post/docker_mysql/</loc>
+    <lastmod>2018-08-08T23:30:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://micross.github.io/post/sudoku_solution_validator/</loc>
     <lastmod>2018-07-16T21:32:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,7 +52,7 @@
   
   <url>
     <loc>https://micross.github.io/post/</loc>
-    <lastmod>2018-07-16T21:32:16+08:00</lastmod>
+    <lastmod>2018-08-08T23:30:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

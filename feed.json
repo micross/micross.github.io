@@ -13,6 +13,13 @@
       "content_html": "\u003cp\u003eMicross的个人博客。\u003c/p\u003e\n"
     }, 
     {
+      "id": "https://micross.github.io/post/docker_mysql/",
+      "url": "https://micross.github.io/post/docker_mysql/",
+      "title": "Docker安装MySQL",
+      "date_published": "2018-08-08T23:30:42+08:00",
+      "content_html": "\u003cdiv class=\"highlight\"\u003e\u003cdiv class=\"chroma\"\u003e\n\u003ctable class=\"lntable\"\u003e\u003ctr\u003e\u003ctd class=\"lntd\"\u003e\n\u003cpre class=\"chroma\"\u003e\u003cspan class=\"lnt\"\u003e 1\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 2\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 3\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 4\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 5\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 6\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 7\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 8\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e 9\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e10\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e11\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e12\n\u003c/span\u003e\u003cspan class=\"lnt\"\u003e13\n\u003c/span\u003e\u003c/pre\u003e\u003c/td\u003e\n\u003ctd class=\"lntd\"\u003e\n\u003cpre class=\"chroma\"\u003e#启动\ndocker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql\n\n#进入容器\ndocker exec -it mysql bash\n\n#登录mysql\nmysql -u root -p\nALTER USER \u0026#39;root\u0026#39;@\u0026#39;localhost\u0026#39; IDENTIFIED BY \u0026#39;mypassword\u0026#39;;\n\n#添加远程登录用户\nCREATE USER \u0026#39;remoteuser\u0026#39;@\u0026#39;%\u0026#39; IDENTIFIED WITH mysql_native_password BY \u0026#39;mypassword\u0026#39;;\nGRANT ALL PRIVILEGES ON *.* TO \u0026#39;remoteuser\u0026#39;@\u0026#39;%\u0026#39;;\u003c/pre\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\n\u003c/div\u003e\n\u003c/div\u003e"
+    }, 
+    {
       "id": "https://micross.github.io/post/sudoku_solution_validator/",
       "url": "https://micross.github.io/post/sudoku_solution_validator/",
       "title": "Sudoku Solution Validator",

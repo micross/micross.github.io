@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Micross</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Mon, 16 Jul 2018 21:32:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Aug 2018 23:30:42 +0800</lastBuildDate>
     
 	<atom:link href="https://micross.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker安装MySQL</title>
+      <link>https://micross.github.io/post/docker_mysql/</link>
+      <pubDate>Wed, 08 Aug 2018 23:30:42 +0800</pubDate>
+      
+      <guid>https://micross.github.io/post/docker_mysql/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 #启动 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql #进入容器 docker exec -it mysql bash #登录mysql mysql -u root -p ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;mypassword&amp;#39;; #添加远程登录用户 CREATE USER &amp;#39;remoteuser&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY</description>
+    </item>
     
     <item>
       <title>Sudoku Solution Validator</title>
